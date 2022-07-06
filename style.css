@@ -2,17 +2,19 @@
     margin: 0;
     padding: 0;
 }
+.container{
+    margin-bottom: 3vh;
+}
 .carousel-bg{
-    background-color: #feeae9;
     border-radius: 1em;
-    padding: 3em 2em;
+    background-color: #feeae9;
     box-sizing: border-box;
 }
 
 .second-layer{
     box-sizing: border-box;
     margin-top: 2em;
-    margin-bottom: 2em;
+    margin-bottom: 3em;
 }
 .buy-now-btn{
     width: 10em;
@@ -21,10 +23,99 @@
     border-radius: .6em;
     color: white;
     font-weight: 700;
-    
+    border: none;
+    box-shadow: 2px 5px 10px gray;
+    margin-top: 3vh;
 }
 
 .price{
     color: #FF136f;
 }
 
+.slide-cont{
+    box-sizing: border-box;
+}
+.d-img{
+    border-radius: 1em;
+    box-sizing: border-box;
+    padding-left: 1em;
+    object-fit: contain;
+    width: 10vw;
+    height: 25em;
+}
+
+.half-width{
+    border-radius: 1em;
+    box-sizing: border-box;
+    width: 40vw;
+    height:53vh;
+}
+
+
+.cntrl-btn{
+    top: 19vh;
+    height: 51vh;
+}
+
+.catagories{
+    
+}
+
+.cat1,.cat2,.cat3{
+    box-sizing: border-box;
+    border-radius: 1em;
+    padding: 1em 1.5em;
+}
+.cat1{
+    background-image: linear-gradient(100deg, #FF9C35,#FFD019);
+    
+}
+
+.cat2{
+    background-image: linear-gradient(300deg,#FF589B, #FF136F);
+}
+
+.cat3{
+    background-image: linear-gradient( #4289FF,#3F07F8);
+}
+
+.catagories h1{
+    color: white;
+}
+.catagories img{
+    width: 9vw;
+}
+
+@media (max-width:769px) {
+    .cat1,.cat2,.cat3{
+        width: 30vw;
+        padding: .8em 1em;
+    }
+    .container .cat-sections{
+        width: 23vw;
+        height: fit-content;
+    }
+    .cat-cont{
+        display: flex;
+        justify-content: space-between;
+        width: 86vw;
+    }
+    .container .catagories{
+        margin-left: 0;
+        padding-left: 0;
+    }
+    .container h1{
+        font-size: 1.2rem;
+    }
+    .half-width{
+        height: 27vh;
+    }
+    .buy-now-btn{
+        font-size: .8em;
+        width: 7em;
+        height:2em;
+    }
+    .cntrl-btn{
+        display: none;
+    }
+}
